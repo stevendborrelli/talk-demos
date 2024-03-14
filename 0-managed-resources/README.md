@@ -8,7 +8,9 @@ Install Crossplane via the [Getting Started](https://docs.crossplane.io/v1.15/ge
 
 ## Installing the S3 Provider
 
-First install the provider onto a Crossplane Cluster from the manifest at <https://marketplace.upbound.io/providers/upbound/provider-aws-s3/v1.1.1>.
+Once Crossplane is installed, install the AWS Provider onto a Crossplane Cluster from the manifest at <https://marketplace.upbound.io/providers/upbound/provider-aws-s3/v1.1.1>.
+
+The major Cloud providers (AWS, Azure, GCP) are broken up in to "family" providers in order to reduce CRDs installed on the cluster.
 
 ```shell
 kubectl apply -f provider.yaml

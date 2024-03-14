@@ -1,5 +1,5 @@
 apiVersion: example.crossplane.io/v1alpha1
-kind: IAMSelfTrustRole
+kind: XIAMSelfTrustRole
 metadata:
   name: self-trust-test
 spec:

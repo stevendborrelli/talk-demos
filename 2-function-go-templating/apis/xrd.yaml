@@ -9,6 +9,11 @@ spec:
     listKind: XIAMSelfTrustRoleList
     plural: xiamselftrustroles
     singular: xiamselftrustrole
+  claimNames:
+    kind: IAMSelfTrustRole
+    listKind: IAMSelfTrustRoleList
+    plural: iamselftrustroles
+    singular: iamselftrustrole
   versions:
     - name: v1alpha1
       served: true

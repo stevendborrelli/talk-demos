@@ -73,7 +73,7 @@ To create an S3 Bucket in AWS, we apply a manifest to our cluster:
 
 ```shell
 $ kubectl apply -f bucket.yaml
-bucket.s3.aws.upbound.io/borrelli-incontro-devops created
+bucket.s3.aws.upbound.io/borrelli-demo-devops created
 ```
 
 You can examine the bucket and look at events using `describe`. Most Managed Resources expose the following status conditions:
@@ -84,7 +84,7 @@ You can examine the bucket and look at events using `describe`. Most Managed Res
 ```shell
 $ kubectl get -f bucket.yaml
 NAME                       READY   SYNCED   EXTERNAL-NAME              AGE
-borrelli-incontro-devops   True    True     borrelli-incontro-devops   99s
+borrelli-demo-devops   True    True     borrelli-demo-devops   99s
 ```
 
 ```shell
@@ -97,5 +97,5 @@ Delete the bucket:
 
 ```shell
 $ kubectl delete -f bucket.yaml
-bucket.s3.aws.upbound.io "borrelli-incontro-devops" deleted
+bucket.s3.aws.upbound.io "borrelli-demo-devops" deleted
 ```

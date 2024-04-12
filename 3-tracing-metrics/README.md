@@ -84,7 +84,7 @@ Now if we create a resource like the bucket, we should have metrics available at
 
 ```shell
 $kubectl apply -f ../0-managed-resources/bucket.yaml 
-bucket.s3.aws.upbound.io/borrelli-incontro-devops created
+bucket.s3.aws.upbound.io/borrelli-demo-devops created
 ```
 
 Connect to the metrics endpoint and search in your browser for `s3_aws_upbound_io_Bucket_` (note the trailing underscore to filter out other S3 resources). You should have a list of the metrics collected at the Managed Resource level:
@@ -92,28 +92,28 @@ Connect to the metrics endpoint and search in your browser for `s3_aws_upbound_i
 ```
 # TYPE s3_aws_upbound_io_Bucket_v1beta1 gauge
 # HELP s3_aws_upbound_io_Bucket_v1beta1 A metrics series for each object
-s3_aws_upbound_io_Bucket_v1beta1{name="borrelli-incontro-devops"} 1
+s3_aws_upbound_io_Bucket_v1beta1{name="borrelli-demo-devops"} 1
 # TYPE s3_aws_upbound_io_Bucket_v1beta1_created gauge
 # HELP s3_aws_upbound_io_Bucket_v1beta1_created Unix creation timestamp
-s3_aws_upbound_io_Bucket_v1beta1_created{name="borrelli-incontro-devops"} 1.710254658e+09
+s3_aws_upbound_io_Bucket_v1beta1_created{name="borrelli-demo-devops"} 1.710254658e+09
 # TYPE s3_aws_upbound_io_Bucket_v1beta1_labels gauge
 # HELP s3_aws_upbound_io_Bucket_v1beta1_labels Labels from the kubernetes object
-s3_aws_upbound_io_Bucket_v1beta1_labels{name="borrelli-incontro-devops",label_owner="borrelli"} 1
+s3_aws_upbound_io_Bucket_v1beta1_labels{name="borrelli-demo-devops",label_owner="borrelli"} 1
 # TYPE s3_aws_upbound_io_Bucket_v1beta1_info gauge
 # HELP s3_aws_upbound_io_Bucket_v1beta1_info A metrics series exposing parameters as labels
-s3_aws_upbound_io_Bucket_v1beta1_info{name="borrelli-incontro-devops"} 1
+s3_aws_upbound_io_Bucket_v1beta1_info{name="borrelli-demo-devops"} 1
 # TYPE s3_aws_upbound_io_Bucket_v1beta1_ready gauge
 # HELP s3_aws_upbound_io_Bucket_v1beta1_ready A metrics series mapping the Ready status condition to a value (True=1,False=0,other=-1)
-s3_aws_upbound_io_Bucket_v1beta1_ready{name="borrelli-incontro-devops"} 1
+s3_aws_upbound_io_Bucket_v1beta1_ready{name="borrelli-demo-devops"} 1
 # TYPE s3_aws_upbound_io_Bucket_v1beta1_ready_time gauge
 # HELP s3_aws_upbound_io_Bucket_v1beta1_ready_time Unix timestamp of last ready change
-s3_aws_upbound_io_Bucket_v1beta1_ready_time{name="borrelli-incontro-devops"} 1.710254691e+09
+s3_aws_upbound_io_Bucket_v1beta1_ready_time{name="borrelli-demo-devops"} 1.710254691e+09
 # TYPE s3_aws_upbound_io_Bucket_v1beta1_synced gauge
 # HELP s3_aws_upbound_io_Bucket_v1beta1_synced A metrics series mapping the Synced status condition to a value (True=1,False=0,other=-1)
-s3_aws_upbound_io_Bucket_v1beta1_synced{name="borrelli-incontro-devops"} 1
+s3_aws_upbound_io_Bucket_v1beta1_synced{name="borrelli-demo-devops"} 1
 # TYPE s3_aws_upbound_io_Bucket_v1beta1_synced_time gauge
 # HELP s3_aws_upbound_io_Bucket_v1beta1_synced_time Unix timestamp of last synced change
-s3_aws_upbound_io_Bucket_v1beta1_synced_time{name="borrelli-incontro-devops"} 1.710254661e+09
+s3_aws_upbound_io_Bucket_v1beta1_synced_time{name="borrelli-demo-devops"} 1.710254661e+09
 # TYPE s3_aws_upbound_io_Bucket_v1beta1_resource_count gauge
 # HELP s3_aws_upbound_io_Bucket_v1beta1_resource_count A metrics series objects to count objects of s3_aws_upbound_io_Bucket_v1beta1
 s3_aws_upbound_io_Bucket_v1beta1_resource_count 1

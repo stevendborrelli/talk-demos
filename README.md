@@ -1,6 +1,6 @@
 # Overview
 
-Examples for my Incontro Devops 2024 talk, [Introduction to Crossplane](https://2024.incontrodevops.it/talks_speakers/#introduction-to-crossplane-16).
+This repository contains example Code used in various talks.
 
 - [0-managed-resources](0-managed-resources): Creating a Managed Resource
 - [1-composition](1-composition): Installing a Composition via a Configuration Package

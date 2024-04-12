@@ -1,7 +1,7 @@
 apiVersion: s3.aws.upbound.io/v1beta1
 kind: Bucket
 metadata:
-  name: borrelli-incontro-devops
+  name: borrelli-demo-devops
   labels:
     owner: borrelli
 spec:
@@ -9,4 +9,4 @@ spec:
     region: us-west-1
     objectLockEnabled: true
     tags:
-      Name: borrelli-incontro-devops
+      Name: borrelli-demo-devops

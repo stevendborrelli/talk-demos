@@ -99,3 +99,10 @@ Delete the bucket:
 $ kubectl delete -f bucket.yaml
 bucket.s3.aws.upbound.io "borrelli-demo-devops" deleted
 ```
+
+### Demo links
+
+- <https://github.com/stevendborrelli/talk-demos/tree/main/0-managed-resources>
+- <https://github.com/stevendborrelli/talk-demos/tree/main/1-composition>
+- <https://github.com/stevendborrelli/talk-demos/tree/main/2-function-go-templating>
+- <https://github.com/stevendborrelli/talk-demos/tree/main/3-tracing-metrics>
